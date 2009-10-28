@@ -1,0 +1,65 @@
+" Gui Configuration
+if has("gui_running")
+  set number
+  colorscheme railscasts
+  set guifont=ProggyClean:h11
+  set guioptions=egmrLt
+else
+  colorscheme koehler
+end
+
+syntax enable
+filetype plugin indent on  " Automatically detect file types.
+let mapleader = ","
+
+set autoindent
+set autowrite  " Writes on make/shell commands
+set backspace=start,indent
+set clipboard+=unnamed  " Yanks go on clipboard instead.
+set expandtab
+set formatoptions=tcqr
+set history=256  " Number of things to remember in history.
+set hlsearch
+set ignorecase
+set laststatus=2  " Always show status line.
+set modifiable
+set nocompatible  " We don't want vi compatibility.
+set nocp incsearch
+set noerrorbells  " No noise.
+set novisualbell  " No blinking .
+set pastetoggle=<F6>
+set ruler  " Ruler on
+set smartcase
+set smarttab
+set sw=2
+set timeoutlen=200  " Time to wait after ESC (default causes an annoying delay)
+set ts=2
+set visualbell
+set wildmode=longest,list
+
+" Shortcuts
+cab Q quit
+cab W write
+cab Wq wq
+map ,c :cd %:p:h<CR>
+map ,s :w !psql gilt_us_development \| less<CR>
+map ,x :bwipeout!<CR>
+nmap <expr> <Leader>e ':e ' . expand('%:p:h')
+"
+" " Stops the cursor reaching the bottom of the screen which is a god send
+" " because when you're writing huge functions you end up typing on the bottom
+" " line else and you can't see how much space you have.
+set scrolloff=3
+
+" Git Grep
+func GitGrep(...)
+  let save = &grepprg
+  set grepprg=git\ grep\ -n\ $*
+  let s = 'grep'
+  for i in a:000
+    let s = s . ' ' . i
+  endfor
+  exe s
+  let &grepprg = save
+endfun
+command -nargs=? G call GitGrep(<f-args>)

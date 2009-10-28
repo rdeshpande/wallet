@@ -1,0 +1,6 @@
+shell -${SHELL}
+defscrollback 1024
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+caption always "%{kB}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{kB}%?%+Lw%?"
