@@ -27,7 +27,7 @@ export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export HISTFILESIZE==10000
 export LC_CTYPE=en_US.UTF-8
-export PATH="~/bin:/opt/local/bin:/opt/local/sbin:/web/gilt/bin:/web/jruby/bin:/usr/local/git/libexec/git-core:${PATH}"
+export PATH="~/bin:~/wallet/bin:/opt/local/bin:/opt/local/sbin:/web/gilt/bin:/web/jruby/bin:/usr/local/git/libexec/git-core:${PATH}"
 export PS1='\u@\h:\w$(__git_ps1 "(%s)")> '
 export RAILS_ENV='development'
 
