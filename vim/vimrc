@@ -63,3 +63,8 @@ func GitGrep(...)
   let &grepprg = save
 endfun
 command -nargs=? G call GitGrep(<f-args>)
+
+" Trailing Whitespace Highlighting
+highlight ExtraWhitespace ctermbg=red guibg=red
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhitespace /\s\+$/
