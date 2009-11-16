@@ -12,7 +12,7 @@ module RoGit
       system('git push origin')
     end
   end
-  alias :ps, :push
+  alias :ps :push
 
   def pull
     if have_changes?
@@ -25,7 +25,7 @@ module RoGit
       system('git pull --rebase origin')
     end
   end
-  alias :pl, :pull
+  alias :pl :pull
 
   private
     def current_branch
@@ -40,4 +40,4 @@ end
 
 include RoGit
 arg = ARGV[0]
-RoGilt.send(arg.strip)
+RoGit.send(arg.strip)

@@ -2,8 +2,8 @@ set -o vi
 ulimit -n 5000
 
 alias g="git"
-alias ll='ls -GHCl'
-alias ls='ls -GHCF'
+alias ll='ls -GHCl --color=auto'
+alias ls='ls -GHCF --color=auto'
 alias s='sudo'
 
 # Gilt
