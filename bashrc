@@ -6,21 +6,9 @@ alias ll='ls -GHCl'
 alias ls='ls -GHCF'
 alias s='sudo'
 
-# Gilt
-alias cg="cd /web/gilt"
-alias railstags="ctags -a -f tags --tag-relative -R app lib vendor"
-alias sc="cg && OVERRIDE_PERFORMANCE_CONTRACTS=true PLAIN_JAVASCRIPTS=true PLAIN_STYLESHEETS=true GILT_DEFAULT_SUBSITE=us RAILS_ENV=development script/console"
-alias sp="spec --options ~/.spec.opts"
-alias ts="OVERRIDE_PERFORMANCE_CONTRACTS=true PLAIN_JAVASCRIPTS=true PLAIN_STYLESHEETS=true GILT_DEFAULT_SUBSITE=us RAILS_ENV=development thin start"
-export GILT_DEFAULT_SUBSITE=us
-export EVENT_NOKQUEUE=1
-
 #password manager
 alias pw="gpg /Volumes/DISK_IMG/.pw.yml.gpg && cat /Volumes/DISK_IMG/.pw.yml && rm -f /Volumes/DISK_IMG/.pw.yml"
 alias pwe="gpg /Volumes/DISK_IMG/.pw.yml.gpg && rm /Volumes/DISK_IMG/.pw.yml.gpg && vi /Volumes/DISK_IMG/.pw.yml && gpg -c /Volumes/DISK_IMG/.pw.yml && rm -f /Volumes/DISK_IMG/.pw.yml"
-
-# todo manager
-alias t='~/bin/rtodo.sh main'
 
 export EDITOR='vim'
 export GPGKEY=01EFDA0D
@@ -39,5 +27,10 @@ shopt -s histappend
 if [ -f /opt/local/etc/bash_completion ]; then
  . /opt/local/etc/bash_completion
 fi
-
 source ~/.git-completion.bash
+
+# Source work-related configs
+for file in `find ~/wallet/work -type f`
+do
+  source $file
+done
