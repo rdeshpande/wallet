@@ -1,0 +1,15 @@
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[user]
+	name = Rohan Deshpande
+	email = rohan.deshpande@gmail.com
+[branch]
+	autosetuprebase = always
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
