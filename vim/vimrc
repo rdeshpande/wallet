@@ -2,7 +2,6 @@
 if has("gui_running")
   set number
   colorscheme railscasts
-  set guifont=ProggyClean:h11
   set guioptions=egmrLt
 else
   colorscheme koehler

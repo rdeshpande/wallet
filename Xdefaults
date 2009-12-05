@@ -1,0 +1,11 @@
+urxvt*loginShell:true
+urxvt*transparent:true
+urxvt*shading:40
+urxvt*background:Black
+urxvt*foreground:White
+urxvt*scrollBar:true
+urxvt*scrollBar_right:true
+urxvt*transpscrollbar:true
+urxvt*saveLines:32767
+urxvt*font:*-*-fixed-medium-r-normal--*-110-*-*-*-*-iso8859-1
+urxvt*boldFont:*-*-fixed-bold-r-normal--*-*-110-*-*-*-*-iso8859-1
