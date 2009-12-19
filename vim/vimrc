@@ -3,6 +3,7 @@ if has("gui_running")
   set number
   colorscheme railscasts
   set guioptions=egmrLt
+  set guifont=Terminus\ 10
 else
   colorscheme koehler
 end
@@ -33,7 +34,6 @@ set smarttab
 set sw=2
 set timeoutlen=200  " Time to wait after ESC (default causes an annoying delay)
 set ts=2
-set visualbell
 set wildmode=longest,list
 
 " Shortcuts
