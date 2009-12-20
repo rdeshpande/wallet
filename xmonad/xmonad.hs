@@ -8,19 +8,6 @@ import XMonad.Util.EZConfig
 -- use e.g. defaultConfig or gnomeConfig
 myBaseConfig = gnomeConfig
 
-myWorkspaces = ["one","two","three","foo","bar","baz","lambda","no","more"]
-
-myKeys =
-    [
-    -- other additional keys
-    ]
-    ++ -- important since ff. is a list itself, can't just put inside above list
-    [ (otherModMasks ++ "M-" ++ [key], action tag)
-         | (tag, key)  <- zip myWorkspaces "123456789"
-         , (otherModMasks, action) <- [ ("", windows . W.view) -- was W.greedyView
-                                      , ("S-", windows . W.shift)]
-    ]
-
 myManageHook = composeAll
     [ manageHook gnomeConfig
     , className =? "MPlayer"        --> doFloat
@@ -38,7 +25,6 @@ main = xmonad $ myBaseConfig
     { 
       normalBorderColor = myNormalBorderColor,
       focusedBorderColor = myFocusedBorderColor,
-      workspaces = myWorkspaces,
       manageHook   = myManageHook,
       terminal     = "urxvt"
-    } `additionalKeysP` myKeys
+    }
