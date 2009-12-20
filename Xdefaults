@@ -13,20 +13,20 @@ urxvt*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
 
 ! terminal colors ------------------------------------------------------------
 !
-Urxvt*color0: #2e3436
-Urxvt*color1: #cc0000
-Urxvt*color2: #4e9a06
-Urxvt*color3: #c4a000
-Urxvt*color4: #3465a4
-Urxvt*color5: #75507b
-Urxvt*color6: #0b939b
-Urxvt*color7: #d3d7cf
-Urxvt*color8: #555753
-Urxvt*color9: #ef2929
-Urxvt*color10: #8ae234
-Urxvt*color11: #fce94f
-Urxvt*color12: #729fcf
-Urxvt*color13: #ad7fa8
-Urxvt*color14: #00f5e9
-Urxvt*color15: #eeeeec
+urxvt*color0: #2e3436
+urxvt*color1: #cc0000
+urxvt*color2: #4e9a06
+urxvt*color3: #c4a000
+urxvt*color4: #3465a4
+urxvt*color5: #75507b
+urxvt*color6: #0b939b
+urxvt*color7: #d3d7cf
+urxvt*color8: #555753
+urxvt*color9: #ef2929
+urxvt*color10: #8ae234
+urxvt*color11: #fce94f
+urxvt*color12: #729fcf
+urxvt*color13: #ad7fa8
+urxvt*color14: #00f5e9
+urxvt*color15: #eeeeec
 
