@@ -13,7 +13,7 @@ let mapleader = ","
 set autoindent
 set autowrite  " Writes on make/shell commands
 set backspace=start,indent
-set clipboard+=unnamed  " Yanks go on clipboard instead.
+set clipboard=unnamed
 set expandtab
 set formatoptions=tcqr
 set history=256  " Number of things to remember in history.
@@ -21,7 +21,6 @@ set hlsearch
 set ignorecase
 set laststatus=2  " Always show status line.
 set modifiable
-set mouse=a
 set nocompatible  " We don't want vi compatibility.
 set nocp incsearch
 set noerrorbells  " No noise.
