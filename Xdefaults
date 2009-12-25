@@ -2,14 +2,17 @@ urxvt*loginShell:true
 urxvt*background:Black
 urxvt*foreground:White
 urxvt*scrollBar:true
+urxvt*scrollWithBuffer: true
+urxvt*scrollTtyOutput: false
 urxvt*scrollBar_right:true
-urxvt*transpscrollbar:true
+urxvt*transparent:true
+urxvt*shading: 10
 urxvt*saveLines:32767
 urxvt*perl-lib:           /usr/lib/urxvt/perl/
 urxvt*perl-ext-common:    default,matcher
 urxvt*urlLauncher:        /usr/bin/firefox
 urxvt*matcher.button:     1
-urxvt*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+urxvt*font: -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 
 !red
 urxvt*color1: #EA6868

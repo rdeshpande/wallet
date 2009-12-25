@@ -25,6 +25,7 @@ main = xmonad $ myBaseConfig
     { 
       normalBorderColor = myNormalBorderColor,
       focusedBorderColor = myFocusedBorderColor,
+      focusFollowsMouse = False,
       manageHook   = myManageHook,
       terminal     = "urxvt"
     }
