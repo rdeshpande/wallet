@@ -1,11 +1,11 @@
 " Gui Configuration
 if has("gui_running")
   set number
-  colorscheme railscasts
   set guioptions=egmrLt
   set guifont=Terminus\ 10
 end
 
+colorscheme vividchalk
 syntax enable
 filetype plugin indent on  " Automatically detect file types.
 let mapleader = ","
@@ -47,19 +47,6 @@ nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 " " because when you're writing huge functions you end up typing on the bottom
 " " line else and you can't see how much space you have.
 set scrolloff=3
-
-" Git Grep
-func GitGrep(...)
-  let save = &grepprg
-  set grepprg=git\ grep\ -n\ $*
-  let s = 'grep'
-  for i in a:000
-    let s = s . ' ' . i
-  endfor
-  exe s
-  let &grepprg = save
-endfun
-command -nargs=? G call GitGrep(<f-args>)
 
 " Trailing Whitespace Highlighting
 highlight ExtraWhitespace ctermbg=red guibg=red
