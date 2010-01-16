@@ -1,14 +1,15 @@
 set -o vi
 
 alias g="git"
-alias ll='ls -GHCl --color=auto'
-alias ls='ls -GHCF --color=auto'
+alias ll='ls -GHCl'
+alias ls='ls -GHCF'
 alias s='sudo'
 
 #password manager
-alias pw="gpg /Volumes/DISK_IMG/.pw.yml.gpg && cat /Volumes/DISK_IMG/.pw.yml && rm -f /Volumes/DISK_IMG/.pw.yml"
-alias pwe="gpg /Volumes/DISK_IMG/.pw.yml.gpg && rm /Volumes/DISK_IMG/.pw.yml.gpg && vi /Volumes/DISK_IMG/.pw.yml && gpg -c /Volumes/DISK_IMG/.pw.yml && rm -f /Volumes/DISK_IMG/.pw.yml"
-alias ]="gnome-open"
+alias pw="gpg /Volumes/rdbackup/.pw.yml.gpg && cat /Volumes/rdbackup/.pw.yml && rm -f /Volumes/rdbackup/.pw.yml"
+alias pwe="gpg /Volumes/rdbackup/.pw.yml.gpg && rm /Volumes/rdbackup/.pw.yml.gpg && vi /Volumes/rdbackup/.pw.yml && gpg -c /Volumes/rdbackup/.pw.yml && rm -f /Volumes/rdbackup/.pw.yml"
+alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
+alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 
 export EDITOR='vim'
 export GPGKEY=01EFDA0D
