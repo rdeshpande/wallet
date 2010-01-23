@@ -9,3 +9,8 @@ then
 fi
 
 source ~/.bashrc
+
+echo -e "Kernel Information: " `uname -smr`
+echo -e "${COLOR_BROWN}`bash --version`"
+echo -ne "${COLOR_LIGHT_GRAY}Uptime: "; uptime
+echo -ne "${COLOR_LIGHT_GRAY}Server time is: "; date
