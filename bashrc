@@ -20,8 +20,8 @@ export COLOR_LIGHT_GRAY='\033[0;37m'
 set -o vi
 
 alias g="git"
-alias ll='ls -GHCl'
-alias ls='ls -GHCF'
+alias ll='ls -GHCl --color=auto'
+alias ls='ls -GHCF --color=auto'
 alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias s='sudo'
@@ -36,12 +36,12 @@ export GREP_OPTIONS='--color=auto'
 export HISTFILESIZE==10000
 export LC_CTYPE=en_US.UTF-8
 export PATH="~/bin:~/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/gilt/bin:/web/jruby/bin:/usr/local/git/libexec/git-core:${PATH}"
+export PS1="\[${COLOR_LIGHT_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w\[${COLOR_YELLOW}\]\$(git branch 2>/dev/null | grep '^*' | colrm 1 1)\[${COLOR_GREEN}\] > \[${COLOR_NC}\]"
 export RAILS_ENV='development'
 
 # Incremental history
 export PROMPT_COMMAND='history -a;history -n'
 shopt -s histappend
-export PS1="\[${COLOR_LIGHT_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w\[${COLOR_YELLOW}\]\$(git branch 2>/dev/null | grep '^*' | colrm 1 1)\[${COLOR_GREEN}\] > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 1
 
 # Source work-related configs
 for file in `find ~/wallet/work -type f`
