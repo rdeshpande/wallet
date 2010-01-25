@@ -26,8 +26,8 @@ alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias s='sudo'
 
 #password manager
-alias pw="gpg /Volumes/rdbackup/.pw.yml.gpg && cat /Volumes/rdbackup/.pw.yml && rm -f /Volumes/rdbackup/.pw.yml"
-alias pwe="gpg /Volumes/rdbackup/.pw.yml.gpg && rm /Volumes/rdbackup/.pw.yml.gpg && vi /Volumes/rdbackup/.pw.yml && gpg -c /Volumes/rdbackup/.pw.yml && rm -f /Volumes/rdbackup/.pw.yml"
+alias pw="gpg /Volumes/key/.pw.yml.gpg && cat /Volumes/key/.pw.yml && rm -f /Volumes/key/.pw.yml"
+alias pwe="gpg /Volumes/key/.pw.yml.gpg && rm /Volumes/key/.pw.yml.gpg && vi /Volumes/key/.pw.yml && gpg -c /Volumes/key/.pw.yml && rm -f /Volumes/key/.pw.yml"
 
 export EDITOR='vim'
 export GPGKEY=01EFDA0D
