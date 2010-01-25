@@ -22,6 +22,7 @@ set -o vi
 alias g="git"
 alias ll='ls -GHCl'
 alias ls='ls -GHCF'
+alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias s='sudo'
 
