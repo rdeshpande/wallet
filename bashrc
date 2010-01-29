@@ -1,6 +1,7 @@
 set -o vi
 
 alias g="git"
+alias gm="open http://gmail.com http://mail.gilt.com http://news.google.com http://www.wunderground.com/cgi-bin/findweather/getForecast?query=10009&wuSelect=WEATHER"
 alias ll='ls -GHCl --color=auto'
 alias ls='ls -GHCF --color=auto'
 alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
