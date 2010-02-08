@@ -14,7 +14,7 @@ set backspace=start,indent
 set clipboard=unnamed
 set expandtab
 set formatoptions=tcqr
-set guifont=ProggyClean:h11
+set guifont=Fixed:h13
 set guioptions=egmrLt
 set history=256  " Number of things to remember in history.
 set hlsearch
