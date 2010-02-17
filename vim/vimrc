@@ -16,6 +16,7 @@ set expandtab
 set formatoptions=tcqr
 set guifont=Fixed:h13
 set guioptions=egmrLt
+set hidden
 set history=256  " Number of things to remember in history.
 set hlsearch
 set ignorecase
