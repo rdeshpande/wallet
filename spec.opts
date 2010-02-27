@@ -2,6 +2,5 @@
 --colour
 --loadby mtime
 --drb
+--format RspecSpinner::Bar
 --diff
---format profile
---backtrace
