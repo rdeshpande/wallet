@@ -3,7 +3,6 @@ if has("gui_running")
   set number
 end
 
-colorscheme slate
 filetype plugin indent on  " Automatically detect file types.
 let mapleader = ","
 syntax enable
@@ -11,6 +10,7 @@ syntax enable
 set autoindent
 set autowrite  " Writes on make/shell commands
 set backspace=start,indent
+set background=dark
 set clipboard=unnamed
 set expandtab
 set formatoptions=tcqr
