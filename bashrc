@@ -8,6 +8,10 @@ alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias s='sudo'
 
+function vg {
+  vim `git grep -li $1`;
+}
+
 #password manager
 alias pw="gpg /Volumes/KEY/pw.yml.gpg && cat /Volumes/KEY/pw.yml && rm -f /Volumes/KEY/pw.yml"
 alias pwe="gpg /Volumes/KEY/pw.yml.gpg && rm /Volumes/KEY/pw.yml.gpg && vi /Volumes/KEY/pw.yml && gpg -c /Volumes/KEY/pw.yml && rm -f /Volumes/KEY/pw.yml"
@@ -17,7 +21,7 @@ export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export HISTFILESIZE==10000
 export LC_CTYPE=en_US.UTF-8
-export PATH="~/bin:~/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/gilt/bin:/web/jruby/bin:/usr/local/git/libexec/git-core:${PATH}"
+export PATH="~/bin:~/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/jruby/bin:/usr/local/git/libexec/git-core:${PATH}"
 export RAILS_ENV='development'
 
 # prompt

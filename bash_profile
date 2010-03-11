@@ -9,5 +9,4 @@ then
 fi
 
 source ~/.bashrc
-
 uptime

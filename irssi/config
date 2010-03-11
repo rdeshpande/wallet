@@ -10,7 +10,9 @@ servers = (
 chatnets = { freenode = { type = "IRC"; }; freenode = { type = "IRC"; }; };
 
 channels = (
-  { name = "haskell"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "scala"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "nyc.rb"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "rubyonrails"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "ruby-lang"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
