@@ -1,16 +1,8 @@
-servers = (
-  {
-    address = "irc.freenode.org";
-    chatnet = "freenode";
-    port = "8001";
-    autoconnect = "true";
-  }
-);
+# PRIVATE CONFIG GOES HERE
 
-chatnets = { freenode = { type = "IRC"; }; freenode = { type = "IRC"; }; };
+chatnets = { freenode = { type = "IRC"; }; };
 
 channels = (
-  { name = "scala"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "nyc.rb"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "rubyonrails"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "ruby-lang"; chatnet = "freenode"; autojoin = "Yes"; }
@@ -177,6 +169,7 @@ statusbar = {
     };
   };
 };
+
 settings = {
   core = {
     real_name = "Rohan Deshpande";
