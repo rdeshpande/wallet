@@ -10,6 +10,8 @@ File.open(MERGED_CONFIG_PATH, 'w') do |f|
   f.write(File.read(PUBLIC_PATH))
   if File.file?(PRIVATE_PATH)
     f.write(File.read(PRIVATE_PATH))
+  else
+    puts "WARNING: Could not find private irssi config at #{PRIVATE_PATH}"
   end
 end
 
