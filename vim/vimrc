@@ -1,5 +1,6 @@
 " Gui Configuration
 if has("gui_running")
+  colorscheme vividchalk
   set number
 end
 
@@ -10,9 +11,9 @@ syntax enable
 set autoindent
 set autowrite  " Writes on make/shell commands
 set backspace=start,indent
-set background=dark
 set clipboard=unnamed
 set expandtab
+set cursorline
 set formatoptions=tcqr
 set guifont=Fixed:h13
 set guioptions=egmrLt
