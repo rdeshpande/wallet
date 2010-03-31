@@ -36,3 +36,9 @@ for file in `find ~/wallet/work -type f`
 do
   source $file
 done
+
+# RVM
+if [[ -s "$HOME/.rvm/scripts/rvm" ]]
+then
+  source "$HOME/.rvm/scripts/rvm"
+fi
