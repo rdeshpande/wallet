@@ -1,10 +1,11 @@
 " Gui Configuration
 if has("gui_running")
-  colorscheme vividchalk
   set number
   set guifont=Menlo:h14
   set guioptions=egmrLt
 end
+
+colorscheme vividchalk
 
 filetype plugin indent on  " Automatically detect file types.
 let mapleader = ","
@@ -57,4 +58,5 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " FuzzyFinder
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|tar|gz)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-nnoremap <Leader>f     :FufFile **/<CR>
+nnoremap <Leader>f     :FufMruFile **/<CR>
+let g:fuf_modesDisable = [ 'mrucmd', ]
