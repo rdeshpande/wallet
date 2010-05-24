@@ -9,3 +9,4 @@ alias sp="cg && spec --options ~/.spec.opts"
 alias ts="cg && OVERRIDE_PERFORMANCE_CONTRACTS=true PLAIN_JAVASCRIPTS=true PLAIN_STYLESHEETS=true GILT_DEFAULT_SUBSITE=us RAILS_ENV=development thin start"
 export GILT_DEFAULT_SUBSITE=us
 export EVENT_NOKQUEUE=1
+export PATH=/opt/nginx/sbin:$PATH
