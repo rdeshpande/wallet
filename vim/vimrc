@@ -15,7 +15,6 @@ set autowrite  " Writes on make/shell commands
 set backspace=start,indent
 set clipboard=unnamed
 set expandtab
-set cursorline
 set formatoptions=tcqr
 set hidden
 set history=256  " Number of things to remember in history.
