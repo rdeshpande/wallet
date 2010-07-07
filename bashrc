@@ -21,7 +21,7 @@ export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export HISTFILESIZE==10000
 export LC_CTYPE=en_US.UTF-8
-export PATH="~/bin:~/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/jruby/bin:/usr/local/git/libexec/git-core:/opt/nginx/sbin:${PATH}"
+export PATH="/usr/local/bin:~/bin:~/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/jruby/bin:/usr/local/git/libexec/git-core:/opt/nginx/sbin:${PATH}"
 export RAILS_ENV='development'
 
 # prompt
@@ -42,5 +42,8 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]
 then
   source "$HOME/.rvm/scripts/rvm"
 fi
+
+# z.sh
+. ~/.z.sh
 
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home"
