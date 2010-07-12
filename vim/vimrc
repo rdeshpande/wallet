@@ -36,6 +36,10 @@ set timeoutlen=200  " Time to wait after ESC (default causes an annoying delay)
 set ts=2
 set wildmode=longest,list
 
+" Python
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+autocmd BufRead *.py set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+
 " Shortcuts
 cab Q quit
 cab W write
