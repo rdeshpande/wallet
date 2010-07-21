@@ -32,14 +32,15 @@ set ruler  " Ruler on
 set scrolloff=3
 set smartcase
 set smarttab
-set sw=2
 set timeoutlen=200  " Time to wait after ESC (default causes an annoying delay)
-set ts=2
 set wildmode=longest,list
 
 " Python
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
-autocmd BufRead *.py set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+autocmd filetype python set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+
+" Ruby
+autocmd filetype ruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " Shortcuts
 cab Q quit
