@@ -17,3 +17,7 @@ servers = (
     autoconnect = "true";
   }
 );
+
+== ZSH
+
+The shell in this package requires oh-my-zsh. The install.sh has been updated to set this up.

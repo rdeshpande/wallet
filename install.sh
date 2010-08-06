@@ -33,3 +33,5 @@ for name in *; do
     fi
   fi
 done
+
+wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
