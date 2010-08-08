@@ -50,6 +50,7 @@ map ,c :cd %:p:h<CR>
 map ,s :w !psql gilt_us_development \| less<CR>
 map ,x :bwipeout!<CR>
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
+:imap jj <Esc>
 
 " FuzzyFinder
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|tar|gz)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
