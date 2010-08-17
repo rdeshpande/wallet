@@ -34,4 +34,4 @@ for name in *; do
   fi
 done
 
-wget http://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+wget http://github.com/rdeshpande/oh-my-zsh/raw/master/tools/install.sh -O - | sh
