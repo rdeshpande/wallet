@@ -25,6 +25,17 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/Applications/liftweb-1.0.1/apache-maven/bin:/Users/rdeshpande/.rvm/rubies/ree-1.8.7-2010.01/bin:/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.01/bin:/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.01@global/bin:/Users/rdeshpande/.rvm/bin:/opt/nginx/sbin:/web/tools/bin:/usr/local/Cellar/python/2.7/bin:/usr/local/bin:~/bin:~/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/jruby/bin:/usr/local/git/libexec/git-core:/opt/nginx/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/X11/bin:/opt/local/redis
 
+# Vi mode
+bindkey -v
+
+# Incremental search
+bindkey -M vicmd "/" history-incremental-search-backward
+bindkey -M vicmd "?" history-incremental-search-forward
+
+# Search based on what you typed in already
+bindkey -M vicmd "//" history-beginning-search-backward
+bindkey -M vicmd "??" history-beginning-search-forward
+
 ## KEYCHAIN
 #
 KEYCHAIN_PATH=`which keychain`
