@@ -63,6 +63,7 @@ export EDITOR='vim'
 export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
+export RAILS_ENV='development'
 
 # Source work-related configs
 for file in `find ~/wallet/work -type f`
