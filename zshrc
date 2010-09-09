@@ -68,12 +68,6 @@ export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
 export RAILS_ENV='development'
 
-# Source work-related configs
-for file in `find ~/wallet/work -type f`
-do
-  source $file
-done
-
 # Fix for weird RVM prompt issue with oh-my-zsh
 unsetopt auto_name_dirs
 
