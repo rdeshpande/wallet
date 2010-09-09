@@ -50,16 +50,19 @@ fi
 #
 alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
+alias pgstart="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultdb start"
+alias pgstop="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultdb stop -m immediate"
 alias s='sudo'
 alias ll='ls -GHCl --color=auto'
 alias ls='ls -GHCF --color=auto'
+alias collegeonly="cd ~/dev/CollegeOnly && rvm ree && rvm gemset use college_only"
 
 # PW MANAGER
 alias pw="gpg /Volumes/KEY/pw.yml.gpg && cat /Volumes/KEY/pw.yml && rm -f /Volumes/KEY/pw.yml"
 alias pwe="gpg /Volumes/KEY/pw.yml.gpg && rm /Volumes/KEY/pw.yml.gpg && vi /Volumes/KEY/pw.yml && gpg -c /Volumes/KEY/pw.yml && rm -f /Volumes/KEY/pw.yml"
 
 # SETTINGS
-export EDITOR='vim'
+export EDITOR='vi'
 export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
@@ -70,6 +73,9 @@ for file in `find ~/wallet/work -type f`
 do
   source $file
 done
+
+# Fix for weird RVM prompt issue with oh-my-zsh
+unsetopt auto_name_dirs
 
 # RVM
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]
