@@ -16,6 +16,9 @@ function! FixTabs()
   :silent! %retab
 endfunction
 
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
+
 filetype plugin indent on  " Automatically detect file types.
 let mapleader = ","
 syntax enable
