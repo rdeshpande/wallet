@@ -46,10 +46,12 @@ set smartcase
 set smarttab
 set timeoutlen=200  " Time to wait after ESC (default causes an annoying delay)
 set wildmode=longest,list
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 " Python
 autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
-autocmd filetype python set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 " Ruby
 autocmd filetype ruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2

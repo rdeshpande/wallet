@@ -55,7 +55,10 @@ alias pgstop="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultd
 alias s='sudo'
 alias ll='ls -GHCl --color=auto'
 alias ls='ls -GHCF --color=auto'
-alias collegeonly="cd ~/dev/CollegeOnly && rvm ree && rvm gemset use college_only"
+
+function cdd {
+    cd ~/dev/$1 && rvm ree && rvm gemset use $1
+}
 
 # PW MANAGER
 alias pw="gpg /Volumes/KEY/pw.yml.gpg && cat /Volumes/KEY/pw.yml && rm -f /Volumes/KEY/pw.yml"
