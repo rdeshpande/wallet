@@ -1,7 +1,7 @@
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Menlo:h14
+  set guifont=Monaco:h13
   set guioptions=egmrLt
 end
 

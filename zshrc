@@ -55,6 +55,7 @@ alias pgstop="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultd
 alias s='sudo'
 alias ll='ls -GHCl --color=auto'
 alias ls='ls -GHCF --color=auto'
+alias sr='script/rails'
 
 function cdd {
     cd ~/dev/$1 && rvm ree && rvm gemset use $1
