@@ -4,9 +4,6 @@ chatnets = { freenode = { type = "IRC"; }; };
 
 channels = (
   { name = "nyc.rb"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "ruby-lang"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "spree"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "haskell"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "nyhacker"; chatnet = "freenode"; autojoin = "Yes"; },
 );
 
