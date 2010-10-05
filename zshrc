@@ -56,6 +56,8 @@ alias s='sudo'
 alias ll='ls -GHCl --color=auto'
 alias ls='ls -GHCF --color=auto'
 alias sr='script/rails'
+alias bi='bundle install'
+alias be='bundle exec'
 
 function cdd {
     cd ~/dev/$1 && rvm ree && rvm gemset use $1
@@ -70,7 +72,6 @@ export EDITOR='vi'
 export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
-export RAILS_ENV='development'
 
 # Fix for weird RVM prompt issue with oh-my-zsh
 unsetopt auto_name_dirs
