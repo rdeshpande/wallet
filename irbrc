@@ -46,3 +46,6 @@ IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-history"
 
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
+# Awesome Print
+require 'rubygems'
+require 'ap'

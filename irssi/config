@@ -5,6 +5,8 @@ chatnets = { freenode = { type = "IRC"; }; };
 channels = (
   { name = "nyc.rb"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "nyhacker"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "hackandtell"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "haskell"; chatnet = "freenode"; autojoin = "Yes"; },
 );
 
 aliases = {
