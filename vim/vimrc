@@ -3,6 +3,9 @@ if has("gui_running")
   set number
   set guifont=Monaco:h13
   set guioptions=egmrLt
+  colorscheme synic
+else
+  colorscheme vividchalk
 end
 
 " Remove spaces at the end of the line
@@ -22,7 +25,6 @@ let g:syntastic_auto_loc_list=1
 filetype plugin indent on  " Automatically detect file types.
 let mapleader = ","
 syntax enable
-colorscheme vividchalk
 set autoindent
 set autowrite  " Writes on make/shell commands
 set backspace=start,indent
