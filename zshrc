@@ -21,7 +21,7 @@ plugins=(rails git ruby)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.02@college_only/bin:/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.02@global/bin:/Users/rdeshpande/.rvm/rubies/ree-1.8.7-2010.02/bin:/Users/rdeshpande/.rvm/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/opt/nginx/sbin:/web/tools/bin:/usr/local/Cellar/python/2.7/bin:/usr/local/bin:/Users/rdeshpande/bin:/Users/rdeshpande/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/jruby/bin:/usr/local/git/libexec/git-core:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/usr/X11/bin:/opt/local/redis
+export PATH=/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.02@college_only/bin:/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.02@global/bin:/Users/rdeshpande/.rvm/rubies/ree-1.8.7-2010.02/bin:/Users/rdeshpande/.rvm/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/opt/nginx/sbin:/web/tools/bin:/usr/local/Cellar/python/2.7/bin:/usr/local/bin:/Users/rdeshpande/bin:/Users/rdeshpande/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/jruby/bin:/usr/local/git/libexec/git-core:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/usr/X11/bin:/opt/local/redis:/usr/local/bin
 
 # Vi mode
 bindkey -v
