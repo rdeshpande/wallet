@@ -6,7 +6,7 @@ channels = (
   { name = "nyc.rb"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "nyhacker"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "hackandtell"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "haskell"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "clojure"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -178,6 +178,6 @@ settings = {
     nick = "rdeshpande";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { use_msgs_window = "yes"; };
+  "fe-common/core" = { use_msgs_window = "yes"; theme = "BitchX"; };
 };
 hilights = ( { text = "rdeshpande"; nick = "yes"; word = "yes"; } );
