@@ -1,6 +1,3 @@
---reverse
 --colour
---loadby mtime
 --drb
 --format RspecSpinner::Bar
---diff

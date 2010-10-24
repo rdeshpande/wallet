@@ -20,9 +20,6 @@ plugins=(rails git ruby)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.02@college_only/bin:/Users/rdeshpande/.rvm/gems/ree-1.8.7-2010.02@global/bin:/Users/rdeshpande/.rvm/rubies/ree-1.8.7-2010.02/bin:/Users/rdeshpande/.rvm/bin:/Applications/liftweb-1.0.1/apache-maven/bin:/opt/nginx/sbin:/web/tools/bin:/usr/local/Cellar/python/2.7/bin:/usr/local/bin:/Users/rdeshpande/bin:/Users/rdeshpande/wallet/bin:/var/lib/gems/1.8/bin/:/opt/local/bin:/opt/local/sbin:/web/jruby/bin:/usr/local/git/libexec/git-core:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/usr/X11/bin:/opt/local/redis
-
 # Vi mode
 bindkey -v
 
@@ -63,8 +60,9 @@ function cdd {
 }
 
 # PW MANAGER
-alias pw="gpg /Volumes/KEY/pw.yml.gpg && cat /Volumes/KEY/pw.yml && rm -f /Volumes/KEY/pw.yml"
-alias pwe="gpg /Volumes/KEY/pw.yml.gpg && rm /Volumes/KEY/pw.yml.gpg && vi /Volumes/KEY/pw.yml && gpg -c /Volumes/KEY/pw.yml && rm -f /Volumes/KEY/pw.yml"
+PW_PATH="~/.pw.yml"
+alias pw="gpg ~/.pw.yml.gpg && cat ~/.pw.yml && rm -f ~/.pw.yml"
+alias pwe="gpg ~/.pw.yml.gpg && rm ~/.pw.yml.gpg && vi ~/.pw.yml && gpg -c ~/.pw.yml && rm -f ~/.pw.yml"
 
 # SETTINGS
 export EDITOR='vi'
@@ -80,3 +78,10 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]
 then
   source "$HOME/.rvm/scripts/rvm"
 fi
+
+# Customize to your needs...
+export PATH=~/bin:/usr/local/bin:/opt/local/bin:$PATH
+
+echo
+fortune
+echo

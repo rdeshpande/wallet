@@ -71,3 +71,6 @@ map <Leader><Tab> :call FixTabs()<CR>
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|tar|gz)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 nnoremap <Leader>f     :FufMruFile **/<CR>
 let g:fuf_modesDisable = [ 'mrucmd', ]
+
+" Clojure
+let vimclojure#WantNailgun = 1
