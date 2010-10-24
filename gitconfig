@@ -13,7 +13,7 @@
 	ci = commit
 	co = checkout
 	br = branch
-  ps = push
-  pl = pull
+    ps = push
+    pl = pull
 [push]
 	default = current
