@@ -19,12 +19,13 @@ function! FixTabs()
   :silent! %retab
 endfunction
 
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
+call pathogen#runtime_append_all_bundles()
 
+filetype off
+syntax on
 filetype plugin indent on  " Automatically detect file types.
+
 let mapleader = ","
-syntax enable
 set autoindent
 set autowrite  " Writes on make/shell commands
 set backspace=start,indent
@@ -41,16 +42,16 @@ set nocompatible  " We don't want vi compatibility.
 set nocp incsearch
 set noerrorbells  " No noise.
 set novisualbell  " No blinking .
-set pastetoggle=<F6>
+set pastetoggle=<Leader>t
 set ruler  " Ruler on
 set scrolloff=3
 set smartcase
 set smarttab
 set timeoutlen=200  " Time to wait after ESC (default causes an annoying delay)
 set wildmode=longest,list
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 " Python
 autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
@@ -71,6 +72,3 @@ map <Leader><Tab> :call FixTabs()<CR>
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|tar|gz)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 nnoremap <Leader>f     :FufMruFile **/<CR>
 let g:fuf_modesDisable = [ 'mrucmd', ]
-
-" Clojure
-let vimclojure#WantNailgun = 1
