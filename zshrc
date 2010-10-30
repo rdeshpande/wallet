@@ -69,7 +69,7 @@ then
 fi
 
 # Customize to your needs...
-export PATH=~/bin:/usr/local/bin:/opt/local/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/opt/local/bin:/usr/local/Cellar/python/2.7/bin/:$PATH
 
 echo
 fortune
