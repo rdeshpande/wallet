@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git submodule init
+
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
 for name in *; do

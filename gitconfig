@@ -17,3 +17,5 @@
     pl = pull
 [push]
 	default = current
+[core]
+	excludesfile = /Users/rdeshpande/.gitignore
