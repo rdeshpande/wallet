@@ -1,6 +1,12 @@
-[submodule "vim-addons/vim-addon-manager"]
-	path = vim-addons/vim-addon-manager
-	url = git://github.com/MarcWeber/vim-addon-manager.git
-[submodule "vim-addons/vim-addon-manager-known-repositories"]
-	path = vim-addons/vim-addon-manager-known-repositories
-	url = http://github.com/MarcWeber/vim-addon-manager-known-repositories.git
+[submodule "vim/bundle/vim-haml"]
+	path = vim/bundle/vim-haml
+	url = http://github.com/tpope/vim-haml.git
+[submodule "vim/bundle/snipmate"]
+	path = vim/bundle/snipmate
+	url = http://github.com/msanders/snipmate.vim.git
+[submodule "vim/bundle/vim-matchit"]
+	path = vim/bundle/vim-matchit
+	url = http://github.com/edsono/vim-matchit.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = http://github.com/tpope/vim-surround.git

@@ -4,13 +4,7 @@ if has("gui_running")
   set guifont=Monaco:h13
   set guioptions=egmrLt
   colorscheme synic
-else
-  colorscheme vividchalk
 end
-
-" Vim addon manager
-set runtimepath+=~/.vim-addons/vim-addon-manager
-call scriptmanager#Activate(['rails', 'surround', 'fuzzyfinder', 'endwise', 'pathogen'])
 
 " Remove spaces at the end of the line
 function! ClearEOLSpaces()
