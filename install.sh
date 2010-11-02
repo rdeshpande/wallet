@@ -1,9 +1,12 @@
 #!/bin/bash
 
 git submodule init
-cd vim/bundle && hg clone http://bitbucket.org/ns9tks/vim-l9
+cd vim/bundle
+hg clone http://bitbucket.org/ns9tks/vim-l9
+hg clone http://bitbucket.org/ns9tks/vim-fuzzyfinder
+cd ..
 
-Cutstring="DO NOT EDIT BELOW THIS LINE"
+cutstring="DO NOT EDIT BELOW THIS LINE"
 
 for name in *; do
   target="$HOME/.$name"

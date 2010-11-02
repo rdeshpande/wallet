@@ -54,7 +54,7 @@ alias pw="gpg ~/.pw.yml.gpg && cat ~/.pw.yml && rm -f ~/.pw.yml"
 alias pwe="gpg ~/.pw.yml.gpg && rm ~/.pw.yml.gpg && vi ~/.pw.yml && gpg -c ~/.pw.yml && rm -f ~/.pw.yml"
 
 # SETTINGS
-export EDITOR='vi'
+export EDITOR='vim'
 export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
