@@ -74,3 +74,4 @@ let g:fuf_modesDisable = [ 'mrucmd', ]
 " Clojure
 let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#DynamicHighlighting = 1
