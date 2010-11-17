@@ -32,6 +32,7 @@ fi
 
 ## ALIAS
 #
+alias cpd="cap production deploy"
 alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias pgstart="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultdb start"

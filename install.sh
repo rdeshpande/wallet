@@ -1,7 +1,9 @@
 #!/bin/bash
 
-git submodule init
-cd vim/bundle
+cd vim
+./update_bundles.rb
+
+cd bundle
 hg clone http://bitbucket.org/ns9tks/vim-l9
 hg clone http://bitbucket.org/ns9tks/vim-fuzzyfinder
 hg clone http://bitbucket.org/kotarak/vimclojure

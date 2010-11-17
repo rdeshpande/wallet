@@ -1,6 +1,3 @@
 vim/doc/*
-vim-addons
 .netrwhist
-vim/bundle/vim-fuzzyfinder
-vim/bundle/vim-l9
-vim/bundle/vimclojure
+vim/bundle
