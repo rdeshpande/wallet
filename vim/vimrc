@@ -56,7 +56,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " Python
-autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class ts=4 sts=4 sw=4
 
 " Ruby
 autocmd filetype ruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2

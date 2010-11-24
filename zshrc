@@ -1,25 +1,3 @@
-# Path to your oh-my-zsh configuration.
-export ZSH=$HOME/.oh-my-zsh
-
-# Set to the name theme to load.
-# Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="kennethreitz"
-
-# Set to this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# export DISABLE_LS_COLORS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails git ruby)
-
-source $ZSH/oh-my-zsh.sh
-
 ## KEYCHAIN
 #
 KEYCHAIN_PATH=`which keychain`
@@ -30,24 +8,36 @@ then
   [[ -f ~/.keychain/`hostname`-sh ]] && source ~/.keychain/`hostname`-sh
 fi
 
+# HISTORY
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt hist_ignore_dups # ignore duplication command history list
+setopt share_history # share command history data
+setopt hist_verify
+setopt inc_append_history
+setopt extended_history
+setopt hist_expire_dups_first
+
+
 ## ALIAS
-#
 alias cpd="cap production deploy"
 alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias pgstart="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultdb start"
 alias pgstop="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultdb stop -m immediate"
 alias s='sudo'
-alias ll='ls -GHCl --color=auto'
+alias l='ls -GHCl --color=auto'
 alias ls='ls -GHCF --color=auto'
-alias sr='script/rails'
+alias ss='script/rails server'
+alias sc='script/rails console'
 alias bi='bundle install'
 alias be='bundle exec'
 alias gap="git add -e"
-
-function cdd {
-    cd ~/dev/$1 && rvm ree && rvm gemset use $1
-}
+alias gca="git commit -a -v"
+alias g="git"
+alias ..="cd .."
+alias ...="cd ..."
 
 # PW MANAGER
 PW_PATH="~/.pw.yml"
@@ -59,19 +49,19 @@ export EDITOR='vim'
 export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
+bindkey -e
 
-# Fix for weird RVM prompt issue with oh-my-zsh
-unsetopt auto_name_dirs
+# COMPLETION
+autoload -U compinit
+compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # RVM
-if [[ -s "$HOME/.rvm/scripts/rvm" ]]
-then
-  source "$HOME/.rvm/scripts/rvm"
-fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin:/opt/local/bin:/usr/local/Cellar/python/2.7/bin/:$PATH
 
-echo
-fortune
-echo
+autoload colors
+colors
+export PS1="%{$fg[red]%}%n%{$reset_color%} @ %{$fg[blue]%}%~ %{$fg[green]%}(%T)%{$reset_color%} %# "
