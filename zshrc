@@ -4,7 +4,7 @@ KEYCHAIN_PATH=`which keychain`
 
 if [ -n "$KEYCHAIN_PATH" ]
 then
-  /opt/local/bin/keychain -q id_rsa
+  $KEYCHAIN_PATH -q id_rsa
   [[ -f ~/.keychain/`hostname`-sh ]] && source ~/.keychain/`hostname`-sh
 fi
 
@@ -19,6 +19,8 @@ setopt inc_append_history
 setopt extended_history
 setopt hist_expire_dups_first
 
+# COREUTILS
+source /usr/local/Cellar/coreutils/8.5/aliases
 
 ## ALIAS
 alias cpd="cap production deploy"
@@ -27,8 +29,8 @@ alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias pgstart="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultdb start"
 alias pgstop="sudo -u postgres pg_ctl -D /opt/local/var/db/postgresql83/defaultdb stop -m immediate"
 alias s='sudo'
-alias l='ls -GHCl --color=auto'
-alias ls='ls -GHCF --color=auto'
+alias l='gls -GHCl --color=auto'
+alias ls='gls -GHCF --color=auto'
 alias ss='script/rails server'
 alias sc='script/rails console'
 alias bi='bundle install'
@@ -42,7 +44,7 @@ alias ...="cd ..."
 # PW MANAGER
 PW_PATH="~/.pw.yml"
 alias pw="gpg ~/.pw.yml.gpg && cat ~/.pw.yml && rm -f ~/.pw.yml"
-alias pwe="gpg ~/.pw.yml.gpg && rm ~/.pw.yml.gpg && vi ~/.pw.yml && gpg -c ~/.pw.yml && rm -f ~/.pw.yml"
+alias pwe="gpg ~/.pw.yml.gpg && rm ~/.pw.yml.gpg && vi ~/.pw.yml; gpg -c ~/.pw.yml && rm -f ~/.pw.yml"
 
 # SETTINGS
 export EDITOR='vim'

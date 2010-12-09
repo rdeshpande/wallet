@@ -3,7 +3,6 @@
 git_bundles = [ 
   "git://github.com/astashov/vim-ruby-debugger.git",
   "git://github.com/msanders/snipmate.vim.git",
-  "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/timcharper/textile.vim.git",
   "git://github.com/tpope/vim-fugitive.git",
   "git://github.com/tpope/vim-git.git",
@@ -13,10 +12,10 @@ git_bundles = [
   "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-surround.git",
-  "git://github.com/tpope/vim-vividchalk.git",
   "git://github.com/tsaleh/vim-align.git",
   "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/edsono/vim-matchit.git"
+  "git://github.com/edsono/vim-matchit.git",
+  "git://github.com/spf13/snipmate-snippets.git"
 ]
 
 vim_org_scripts = [
