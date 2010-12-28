@@ -1,11 +1,8 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-  "git://github.com/astashov/vim-ruby-debugger.git",
   "git://github.com/msanders/snipmate.vim.git",
-  "git://github.com/timcharper/textile.vim.git",
   "git://github.com/tpope/vim-fugitive.git",
-  "git://github.com/tpope/vim-git.git",
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/tpope/vim-markdown.git",
   "git://github.com/Raimondi/delimitMate",
@@ -13,14 +10,14 @@ git_bundles = [
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-surround.git",
   "git://github.com/tsaleh/vim-align.git",
+  "git://github.com/kana/vim-textobj-user.git",
+  "git://github.com/nelstrom/vim-textobj-rubyblock.git",
   "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/edsono/vim-matchit.git",
-  "git://github.com/spf13/snipmate-snippets.git"
+  "git://github.com/edsono/vim-matchit.git"
 ]
 
 vim_org_scripts = [
   ["IndexedSearch", "7062",  "plugin"],
-  ["gist",          "12732", "plugin"],
   ["jquery",        "12107", "syntax"],
 ]
 
@@ -48,4 +45,9 @@ vim_org_scripts.each do |name, script_id, script_type|
   File.open(local_file, "w") do |file|
     file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
   end
+end
+
+Dir.chdir(bundles_dir) do
+  `hg clone http://bitbucket.org/ns9tks/vim-l9`
+  `hg clone http://bitbucket.org/ns9tks/vim-fuzzyfinder`
 end

@@ -1,7 +1,7 @@
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Menlo:h14
+  set guifont=Inconsolata-dz:h14
   set guioptions=egmrLt
   colorscheme molokai
 else
@@ -25,6 +25,8 @@ call pathogen#runtime_append_all_bundles()
 
 syntax on
 filetype plugin indent on  " Automatically detect file types.
+
+runtime macros/matchit.vim
 
 let mapleader = ","
 let maplocalleader = ","
