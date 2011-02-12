@@ -20,7 +20,7 @@ setopt extended_history
 setopt hist_expire_dups_first
 
 # COREUTILS
-source /usr/local/Cellar/coreutils/8.5/aliases
+source /usr/local/Cellar/coreutils/8.7/aliases
 
 # WHITESPACE
 alias ws="sed -i '' 's/[[:space:]]*$//g' $1"
@@ -33,10 +33,17 @@ function gws {
   done
 }
 
+function gacp {
+  git add .
+  git commit -m $1
+  git push
+}
+
 ## ALIAS
 alias cpd="cap production deploy"
 alias ws="sed -i '' 's/[[:space:]]*$//g' $1"
 alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
+alias pgstart="sudo -u postgres pg_ctl -D /usr/local/var/postgres start"
 alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias s='sudo'
 alias l='gls -GHCl --color=auto'

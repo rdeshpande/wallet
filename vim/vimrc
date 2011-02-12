@@ -1,9 +1,9 @@
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Inconsolata-dz:h14
+  set guifont=Monaco:h12
   set guioptions=egmrLt
-  colorscheme molokai
+  colorscheme ir_black
 else
   colorscheme slate
 end
@@ -74,6 +74,6 @@ nnoremap <Leader>f     :FufMruFile **/<CR>
 let g:fuf_modesDisable = [ 'mrucmd', ]
 
 " Clojure
-let vimclojure#WantNailgun = 1
+"let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
