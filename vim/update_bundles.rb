@@ -9,6 +9,7 @@ git_bundles = [
   "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-surround.git",
+  "https://github.com/scrooloose/syntastic.git",
   "git://github.com/tsaleh/vim-align.git",
   "git://github.com/kana/vim-textobj-user.git",
   "git://github.com/nelstrom/vim-textobj-rubyblock.git",

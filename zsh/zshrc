@@ -81,6 +81,9 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 # Customize to your needs...
 export PATH=~/local/bin:~/bin:/usr/local/bin:/opt/local/bin:/usr/local/Cellar/python/2.7.1/bin/:$PATH
 
+# Z
+. ~/bin/z.sh
+
 autoload colors
 colors
 export PS1="%{$fg[red]%}%n%{$reset_color%} @ %{$fg[blue]%}%~ %{$fg[green]%}(%T)%{$reset_color%} %# "

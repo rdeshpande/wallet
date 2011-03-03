@@ -4,8 +4,6 @@ if has("gui_running")
   set guifont=Monaco:h12
   set guioptions=egmrLt
   colorscheme ir_black
-else
-  colorscheme slate
 end
 
 " Remove spaces at the end of the line
@@ -77,3 +75,6 @@ let g:fuf_modesDisable = [ 'mrucmd', ]
 "let vimclojure#WantNailgun = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
+
+" Syntastic
+let g:syntastic_auto_loc_list=1
