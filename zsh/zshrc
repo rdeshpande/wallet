@@ -33,12 +33,6 @@ function gws {
   done
 }
 
-function gacp {
-  git add .
-  git commit -m $1
-  git push
-}
-
 ## ALIAS
 alias cpd="cap production deploy"
 alias ws="sed -i '' 's/[[:space:]]*$//g' $1"
@@ -80,6 +74,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 
 # Customize to your needs...
 export PATH=~/local/bin:~/bin:/usr/local/bin:/opt/local/bin:/usr/local/Cellar/python/2.7.1/bin/:$PATH
+export NODE_PATH=/usr/local/lib/node
 
 # Z
 . ~/bin/z.sh

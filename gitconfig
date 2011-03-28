@@ -13,10 +13,14 @@
 	ci = commit
 	co = checkout
 	br = branch
-    ps = push
-    pl = pull
+  ps = push
+  pl = pull
+  rh = reset --hard HEAD
+  ca = commit --amend
 [push]
 	default = current
 [core]
 	excludesfile = /Users/rdeshpande/.gitignore
 	editor = /usr/bin/vim
+[github]
+	user = rdeshpande

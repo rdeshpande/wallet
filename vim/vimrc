@@ -1,9 +1,9 @@
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Monaco:h12
+  set guifont=Monaco:h14
   set guioptions=egmrLt
-  colorscheme ir_black
+  colorscheme molokai
 end
 
 " Remove spaces at the end of the line
@@ -17,7 +17,7 @@ function! FixTabs()
   :silent! %retab
 endfunction
 
-filetype off 
+filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
@@ -26,8 +26,8 @@ filetype plugin indent on  " Automatically detect file types.
 
 runtime macros/matchit.vim
 
-let mapleader = ","
-let maplocalleader = ","
+let mapleader = ";"
+let maplocalleader = ";"
 set autoindent
 set autowrite  " Writes on make/shell commands
 set backspace=start,indent
@@ -59,6 +59,7 @@ set softtabstop=2
 autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class ts=4 sts=4 sw=4
 
 " Shortcuts
+map <Leader>s :w<CR>
 cab Q quit
 cab W write
 cab Wq wq
