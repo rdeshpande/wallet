@@ -19,10 +19,12 @@ filetype plugin indent on  " Automatically detect file types.
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Menlo:h18
+  set guifont=Menlo:h16
   set background=dark
   colorscheme solarized
   set guioptions=egmrLt
+else
+  colorscheme desert
 end
 
 runtime macros/matchit.vim
