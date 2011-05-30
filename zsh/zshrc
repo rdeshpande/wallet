@@ -51,6 +51,7 @@ alias gca="git commit -a -v"
 alias g="git"
 alias ..="cd .."
 alias ...="cd ..."
+alias socks="ssh -C2qTnN -D 8080"
 
 # PW MANAGER
 PW_PATH="~/.pw.yml"

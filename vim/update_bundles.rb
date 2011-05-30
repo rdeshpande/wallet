@@ -3,6 +3,7 @@
 git_bundles = [ 
   "git://github.com/msanders/snipmate.vim.git",
   "git://github.com/tpope/vim-fugitive.git",
+  "git://github.com/kchmck/vim-coffee-script.git",
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/tpope/vim-markdown.git",
   "git://github.com/Raimondi/delimitMate",
