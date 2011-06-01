@@ -20,7 +20,7 @@ setopt extended_history
 setopt hist_expire_dups_first
 
 # COREUTILS
-source /usr/local/Cellar/coreutils/8.7/aliases
+source /usr/local/Cellar/coreutils/8.12/aliases
 
 # WHITESPACE
 alias ws="sed -i '' 's/[[:space:]]*$//g' $1"
@@ -72,6 +72,9 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Work related stuff
+[[ -s "$HOME/.zsh/work.zsh" ]] && source "$HOME/.zsh/work.zsh"
 
 # Customize to your needs...
 export PATH=~/local/bin:~/bin:/usr/local/bin:/opt/local/bin:/usr/local/Cellar/python/2.7.1/bin/:$PATH

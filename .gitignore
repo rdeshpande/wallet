@@ -1,3 +1,4 @@
 vim/doc/*
 .netrwhist
 vim/bundle
+zsh/work.sh
