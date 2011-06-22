@@ -19,9 +19,9 @@ filetype plugin indent on  " Automatically detect file types.
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Menlo:h16
+  set guifont=Inconsolata:h16
   set background=dark
-  colorscheme ir_black
+  colorscheme moria
   set guioptions=egmrLt
 else
   colorscheme desert
@@ -29,6 +29,7 @@ end
 
 runtime macros/matchit.vim
 
+set binary
 let mapleader = ";"
 let maplocalleader = ";"
 set autoindent
@@ -81,4 +82,4 @@ let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
 
 " Syntastic
-let g:syntastic_auto_loc_list=1
+" let g:syntastic_auto_loc_list=1
