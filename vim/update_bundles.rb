@@ -15,7 +15,8 @@ git_bundles = [
   "git://github.com/kana/vim-textobj-user.git",
   "git://github.com/nelstrom/vim-textobj-rubyblock.git",
   "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/edsono/vim-matchit.git"
+  "git://github.com/edsono/vim-matchit.git",
+  "git://git.wincent.com/command-t.git"
 ]
 
 vim_org_scripts = [
@@ -47,9 +48,4 @@ vim_org_scripts.each do |name, script_id, script_type|
   File.open(local_file, "w") do |file|
     file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
   end
-end
-
-Dir.chdir(bundles_dir) do
-  `hg clone http://bitbucket.org/ns9tks/vim-l9`
-  `hg clone http://bitbucket.org/ns9tks/vim-fuzzyfinder`
 end

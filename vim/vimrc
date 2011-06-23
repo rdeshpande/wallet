@@ -48,7 +48,7 @@ set nocompatible  " We don't want vi compatibility.
 set nocp incsearch
 set noerrorbells  " No noise.
 set novisualbell  " No blinking .
-set pastetoggle=<Leader>t
+set pastetoggle=<Leader>p
 set ruler  " Ruler on
 set scrolloff=3
 set smartcase
@@ -70,11 +70,6 @@ cab Wq wq
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 map <Leader><Space> :call ClearEOLSpaces()<CR>
 map <Leader><Tab> :call FixTabs()<CR>
-
-" FuzzyFinder
-let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|tar|gz)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-nnoremap <Leader>f     :FufMruFile **/<CR>
-let g:fuf_modesDisable = [ 'mrucmd', ]
 
 " Clojure
 "let vimclojure#WantNailgun = 1
