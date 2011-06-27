@@ -29,7 +29,6 @@ end
 
 runtime macros/matchit.vim
 
-set binary
 let mapleader = ";"
 let maplocalleader = ";"
 set autoindent
@@ -58,6 +57,7 @@ set wildmode=longest,list
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set wildignore+=*.o,*.obj,.git,*.pdf,*.gif,*.png,*.jpg,*.ico
 
 " Python
 autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class ts=4 sts=4 sw=4
@@ -70,6 +70,7 @@ cab Wq wq
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 map <Leader><Space> :call ClearEOLSpaces()<CR>
 map <Leader><Tab> :call FixTabs()<CR>
+map <Leader>f :CommandT<CR>
 
 " Clojure
 "let vimclojure#WantNailgun = 1
