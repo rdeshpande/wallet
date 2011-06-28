@@ -72,10 +72,11 @@ map <Leader><Space> :call ClearEOLSpaces()<CR>
 map <Leader><Tab> :call FixTabs()<CR>
 map <Leader>f :CommandT<CR>
 
-" Clojure
-"let vimclojure#WantNailgun = 1
-let g:vimclojure#ParenRainbow = 1
-let g:vimclojure#DynamicHighlighting = 1
+"
+" FuzzyFinder
+let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|tar|gz)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+nnoremap <Leader>f     :FufMruFile **/<CR>
+let g:fuf_modesDisable = [ 'mrucmd', ]
 
 " Syntastic
 " let g:syntastic_auto_loc_list=1
