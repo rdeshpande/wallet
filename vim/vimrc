@@ -24,7 +24,7 @@ if has("gui_running")
   colorscheme moria
   set guioptions=egmrLt
 else
-  colorscheme desert
+  colorscheme ron
 end
 
 runtime macros/matchit.vim
