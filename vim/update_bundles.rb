@@ -14,6 +14,7 @@ git_bundles = [
   "git://github.com/vim-ruby/vim-ruby.git",
   "git://github.com/edsono/vim-matchit.git",
   "git://github.com/hallettj/jslint.vim.git",
+  "git://github.com/pangloss/vim-javascript",
 ]
 
 vim_org_scripts = [
