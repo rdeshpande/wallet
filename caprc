@@ -1,5 +1,5 @@
 begin
   require 'capistrano_colors'
-rescue Gem::LoadError
+rescue LoadError
   puts "WARNING: capistrano_colors not installed."
 end
