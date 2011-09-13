@@ -1,0 +1,2 @@
+# Fixes the ctrl-r search in IRB
+bind "^R" em-inc-search-prev

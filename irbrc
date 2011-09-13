@@ -3,8 +3,6 @@
 require 'rubygems'
 require 'yaml'
 
-alias q exit
-
 class Object
   def local_methods
     (methods - Object.instance_methods).sort
@@ -71,12 +69,6 @@ end
 # awesome_print is prints prettier than pretty_print
 extend_console 'ap' do
   alias pp ap
-end
-
-# When you're using Rails 2 console, show queries in the console
-extend_console 'rails2', (ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')), false do
-  require 'logger'
-  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
 end
 
 # When you're using Rails 3 console, show queries in the console
