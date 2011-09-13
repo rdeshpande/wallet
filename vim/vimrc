@@ -21,7 +21,7 @@ if has("gui_running")
   set number
   set guifont=Inconsolata:h16
   set background=dark
-  colorscheme moria
+  colorscheme ir_black
   set guioptions=egmrLt
 else
   colorscheme ron

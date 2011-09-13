@@ -80,8 +80,9 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 export PATH=~/local/bin:~/bin:/usr/local/bin:/opt/local/bin:/usr/local/Cellar/python/2.7.1/bin/:$PATH
 export NODE_PATH=/usr/local/lib/node
 
-# Z
-. ~/bin/z.sh
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
 
 autoload colors
 colors
