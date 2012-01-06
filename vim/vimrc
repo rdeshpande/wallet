@@ -77,4 +77,4 @@ nnoremap <Leader>f     :FufMruFile **/<CR>
 let g:fuf_modesDisable = [ 'mrucmd', ]
 
 " Syntastic
-" let g:syntastic_auto_loc_list=1
+let g:ruby_path = "/Users/rdeshpande/.rvm/rubies/default/bin"
