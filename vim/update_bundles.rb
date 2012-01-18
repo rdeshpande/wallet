@@ -5,7 +5,7 @@ git_bundles = [
   "git://github.com/tpope/vim-fugitive.git",
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/kchmck/vim-coffee-script.git",
-  "git://github.com/tpope/vim-markdown.git",
+  'git://github.com/tpope/vim-bundler.git',
   "git://github.com/Raimondi/delimitMate",
   "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-repeat.git",
@@ -14,12 +14,10 @@ git_bundles = [
   "git://github.com/tsaleh/vim-align.git",
   "git://github.com/vim-ruby/vim-ruby.git",
   "git://github.com/edsono/vim-matchit.git",
-  "git://github.com/hallettj/jslint.vim.git",
   "git://github.com/pangloss/vim-javascript",
 ]
 
 vim_org_scripts = [
-  ["IndexedSearch", "7062",  "plugin"],
   ["jquery",        "12107", "syntax"],
 ]
 
