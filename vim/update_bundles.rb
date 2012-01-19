@@ -7,6 +7,7 @@ git_bundles = [
   "git://github.com/kchmck/vim-coffee-script.git",
   'git://github.com/tpope/vim-bundler.git',
   "git://github.com/Raimondi/delimitMate",
+  "https://github.com/kchmck/vim-coffee-script.git",
   "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-surround.git",
@@ -25,6 +26,8 @@ require 'fileutils'
 require 'open-uri'
 
 bundles_dir = File.join(File.dirname(__FILE__), "bundle")
+
+FileUtils.mkdir_p(bundles_dir)
 
 Dir.chdir(bundles_dir) do
 
