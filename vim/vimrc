@@ -72,5 +72,7 @@ map <Leader><Tab> :call FixTabs()<CR>
 " Syntastic
 let g:ruby_path = "/Users/rdeshpande/.rvm/rubies/default/bin"
 
+nnoremap <Leader>f     :CtrlPMRUFiles<CR>
+
 " Vim-pasta
 let g:pasta_enabled_filetypes = ['ruby', 'javascript', 'css', 'sh']
