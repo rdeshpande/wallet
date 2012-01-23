@@ -19,7 +19,7 @@ if has("gui_running")
   set number
   set guifont=Inconsolata:h16
   set background=dark
-  colorscheme ir_black
+  colorscheme lucius
   set guioptions=egmrLt
 else
   colorscheme ron
@@ -68,13 +68,9 @@ cab Wq wq
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 map <Leader><Space> :call ClearEOLSpaces()<CR>
 map <Leader><Tab> :call FixTabs()<CR>
-map <Leader>f :CommandT<CR>
-
-"
-" FuzzyFinder
-let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|tar|gz)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-nnoremap <Leader>f     :FufMruFile **/<CR>
-let g:fuf_modesDisable = [ 'mrucmd', ]
 
 " Syntastic
 let g:ruby_path = "/Users/rdeshpande/.rvm/rubies/default/bin"
+
+" Vim-pasta
+let g:pasta_enabled_filetypes = ['ruby', 'javascript', 'css', 'sh']

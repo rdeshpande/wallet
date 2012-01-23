@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-  "git://github.com/msanders/snipmate.vim.git",
   "git://github.com/tpope/vim-fugitive.git",
+  "https://github.com/sickill/vim-pasta.git",
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/kchmck/vim-coffee-script.git",
   'git://github.com/tpope/vim-bundler.git',
@@ -16,10 +16,6 @@ git_bundles = [
   "git://github.com/vim-ruby/vim-ruby.git",
   "git://github.com/edsono/vim-matchit.git",
   "git://github.com/pangloss/vim-javascript",
-]
-
-vim_org_scripts = [
-  ["jquery",        "12107", "syntax"],
 ]
 
 require 'fileutils'
@@ -49,7 +45,4 @@ Dir.chdir(bundles_dir) do
       file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
     end
   end
-
-  system("hg clone http://bitbucket.org/ns9tks/vim-l9")
-  system("hg clone http://bitbucket.org/ns9tks/vim-fuzzyfinder")
 end
