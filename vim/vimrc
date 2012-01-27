@@ -17,9 +17,9 @@ filetype plugin indent on  " Automatically detect file types.
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Inconsolata:h16
+  set guifont=Monaco:h12
   set background=dark
-  colorscheme lucius
+  colorscheme BusyBee
   set guioptions=egmrLt
 else
   colorscheme ron
@@ -37,6 +37,7 @@ set expandtab
 set formatoptions=tcqr
 set hidden
 set history=256  " Number of things to remember in history.
+set listchars=tab:▸\ ,trail:¬   " UTF-8 characters for trailing whitespace
 set hlsearch
 set ignorecase
 set laststatus=2  " Always show status line.
@@ -45,20 +46,17 @@ set nocompatible  " We don't want vi compatibility.
 set nocp incsearch
 set noerrorbells  " No noise.
 set novisualbell  " No blinking .
-set pastetoggle=<Leader>p
 set ruler  " Ruler on
 set scrolloff=3
 set smartcase
 set smarttab
+set statusline+=\ %t\ \|\ len:\ \%L\ \|\ type:\ %Y\ \|\ ascii:\ \%03.3b\ \|\ hex:\ %2.2B\ \|\ line:\ \%2l
 set timeoutlen=200  " Time to wait after ESC (default causes an annoying delay)
 set wildmode=longest,list
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set wildignore+=*.o,*.obj,.git,*.pdf,*.gif,*.png,*.jpg,*.ico
-
-" Python
-autocmd filetype python set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class ts=4 sts=4 sw=4
 
 " Shortcuts
 map <Leader>s :w<CR>
@@ -76,3 +74,7 @@ nnoremap <Leader>f     :CtrlPMRUFiles<CR>
 
 " Vim-pasta
 let g:pasta_enabled_filetypes = ['ruby', 'javascript', 'css', 'sh']
+
+" Consider question/exclamation marks to be part of a Vim word.
+autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
+autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255

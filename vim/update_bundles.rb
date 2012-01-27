@@ -5,7 +5,6 @@ git_bundles = [
   "https://github.com/sickill/vim-pasta.git",
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/kchmck/vim-coffee-script.git",
-  'git://github.com/tpope/vim-bundler.git',
   "git://github.com/Raimondi/delimitMate",
   "https://github.com/kchmck/vim-coffee-script.git",
   "git://github.com/tpope/vim-rails.git",
