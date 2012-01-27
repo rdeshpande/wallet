@@ -89,3 +89,9 @@ colors
 export PS1="%{$fg[red]%}%n%{$reset_color%} @ %{$fg[blue]%}%~ %{$fg[green]%}(%T)%{$reset_color%} %# "
 
 source '.zsh/cmd-highlight.zsh'
+
+if [ -f ~/NOTES ]; then
+  echo '--------------------'
+  cat ~/NOTES
+  echo '--------------------'
+fi
