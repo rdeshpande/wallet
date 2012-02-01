@@ -78,3 +78,6 @@ let g:pasta_enabled_filetypes = ['ruby', 'javascript', 'css', 'sh']
 " Consider question/exclamation marks to be part of a Vim word.
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
+
+" Reload Vimrc
+map <leader>rv  :source ~/.vimrc<CR>
