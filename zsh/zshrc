@@ -35,23 +35,24 @@ function gws {
 
 ## ALIAS
 alias cpd="cap production deploy"
-alias ws="sed -i '' 's/[[:space:]]*$//g' $1"
-alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
 alias pgstart="sudo -u postgres pg_ctl -D /usr/local/var/postgres start"
-alias mysqlstop='/opt/local/bin/mysqladmin5 -u root shutdown'
 alias s='sudo'
 alias l='gls -GHCl --color=auto'
 alias ls='gls -GHCF --color=auto'
-alias ss='script/rails server'
-alias sc='script/rails console'
 alias bi='bundle install'
 alias be='bundle exec'
 alias gap="git add -e"
 alias gca="git commit -a -v"
+alias sc="script/rails console"
+alias ss="script/rails server"
+alias git=hub
 alias g="git"
+alias gph="git push heroku"
+alias hdb="heroku run rake db:migrate"
 alias ..="cd .."
 alias ...="cd ..."
 alias socks="ssh -C2qTnN -D 8080"
+alias h="heroku"
 
 # PW MANAGER
 PW_PATH="~/.pw.yml"

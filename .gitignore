@@ -1,5 +1,5 @@
 vim/doc/*
 .netrwhist
 vim/bundle
-zsh/work.sh
+zsh/work.zsh
 vim/autoload
