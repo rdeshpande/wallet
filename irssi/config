@@ -2,12 +2,6 @@
 
 chatnets = { freenode = { type = "IRC"; }; };
 
-channels = (
-  { name = "ruby-lang"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "rubyonrails"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "sdruby"; chatnet = "freenode"; autojoin = "Yes"; }
-);
-
 aliases = {
   J = "join";
   WJOIN = "join -window";

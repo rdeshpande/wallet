@@ -43,3 +43,6 @@ for name in *; do
     fi
   fi
 done
+
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+ln -s ~/wallet/zsh/rohan.zsh ~/.oh-my-zsh/custom

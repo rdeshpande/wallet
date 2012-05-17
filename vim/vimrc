@@ -17,7 +17,7 @@ filetype plugin indent on  " Automatically detect file types.
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Monaco:h12
+  set guifont=Menlo:h12
   set background=dark
   colorscheme BusyBee
   set guioptions=egmrLt
@@ -83,4 +83,5 @@ autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
 map <leader>rv  :source ~/.vimrc<CR>
 
 " Kill whitespace
-autocmd BufWritePre *.rb,*.yml,*.js,*.json,*.css,*.less,*.sass,*.html,*.xml,*.erb,*.haml,*.feature :%s/\s\+$//e
+"autocmd BufWritePre *.rb,*.yml,*.js,*.json,*.css,*.less,*.sass,*.html,*.xml,*.erb,*.haml,*.feature :%s/\s\+$//e
+let g:ragtag_global_maps = 1 
