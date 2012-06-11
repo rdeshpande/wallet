@@ -8,6 +8,7 @@ git_bundles = [
   "https://github.com/bbommarito/vim-slim.git",
   "https://github.com/groenewege/vim-less",
   "git://github.com/kchmck/vim-coffee-script.git",
+  "https://github.com/briancollins/vim-jst.git",
   "git://github.com/Raimondi/delimitMate",
   "https://github.com/tpope/vim-endwise.git",
   "https://github.com/kchmck/vim-coffee-script.git",
