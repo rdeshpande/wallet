@@ -6,15 +6,10 @@ then
   [[ -f ~/.keychain/`hostname`-sh ]] && source ~/.keychain/`hostname`-sh
 fi
 
-# COREUTILS
-source /usr/local/Cellar/coreutils/8.11/aliases
-
 ## ALIAS
 alias cpd="cap production deploy"
 alias pgstart="sudo -u postgres pg_ctl -D /usr/local/var/postgres start"
 alias s='sudo'
-alias l='gls -GHCl --color=auto'
-alias ls='gls -GHCF --color=auto'
 alias bi='bundle install'
 alias be='bundle exec'
 alias gap="git add -e"
@@ -27,8 +22,6 @@ alias gph="git push heroku"
 alias hdb="heroku run rake db:migrate"
 alias ..="cd .."
 alias ...="cd ..."
-alias socks="ssh -C2qTnN -D 8080"
-alias h="heroku"
 
 # PW MANAGER
 PW_PATH="~/.pw.yml"
@@ -45,7 +38,7 @@ bindkey -e
 # Work related stuff
 [[ -s "$HOME/.zsh/work.zsh" ]] && source "$HOME/.zsh/work.zsh"
 
-. ~/bin/z
+. `brew --prefix`/etc/profile.d/z.sh
 function precmd () {
   z --add "$(pwd -P)"
 }
