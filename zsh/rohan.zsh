@@ -16,7 +16,6 @@ alias gap="git add -e"
 alias gca="git commit -a -v"
 alias sc="script/rails console"
 alias ss="script/rails server"
-alias git=hub
 alias g="git"
 alias gph="git push heroku"
 alias hdb="heroku run rake db:migrate"
