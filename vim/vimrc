@@ -7,8 +7,9 @@ filetype plugin indent on  " Automatically detect file types.
 if has("gui_running")
   set number
   set guifont=Menlo:h12
+  set linespace=2
   set background=dark
-  colorscheme lucius
+  colorscheme Tomorrow-Night
   set guioptions=egmrLt
 else
   colorscheme ron
