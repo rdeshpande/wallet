@@ -7,8 +7,8 @@ then
 fi
 
 ## ALIAS
-alias cpd="cap production deploy"
-alias pgstart="sudo -u postgres pg_ctl -D /usr/local/var/postgres start"
+alias cpd="cap production deploy:migrations"
+alias cpd="cap staging deploy:migrations"
 alias s='sudo'
 alias bi='bundle install'
 alias be='bundle exec'
@@ -19,8 +19,11 @@ alias ss="script/rails server"
 alias g="git"
 alias gph="git push heroku"
 alias hdb="heroku run rake db:migrate"
+alias beg="bundle exec guard"
 alias ..="cd .."
 alias ...="cd ..."
+alias mig="bundle exec rake db:migrate"
+alias bs="bundle exec rspec"
 
 # PW MANAGER
 PW_PATH="~/.pw.yml"

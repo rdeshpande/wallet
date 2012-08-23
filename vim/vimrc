@@ -6,10 +6,10 @@ filetype plugin indent on  " Automatically detect file types.
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Menlo:h12
+  set guifont=Lucida\ Sans\ Typewriter:h12
   set linespace=2
   set background=dark
-  colorscheme Tomorrow-Night
+  colorscheme koehler
   set guioptions=egmrLt
 else
   colorscheme ron
@@ -65,6 +65,7 @@ let g:pasta_enabled_filetypes = ['ruby', 'javascript', 'css', 'sh']
 " Consider question/exclamation marks to be part of a Vim word.
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
+au BufNewFile,BufRead *.ejs set filetype=jst
 
 let g:ragtag_global_maps = 1 
 let g:Powerline_symbols = 'fancy'
