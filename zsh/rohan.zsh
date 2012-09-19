@@ -41,6 +41,3 @@ bindkey -e
 [[ -s "$HOME/.zsh/work.zsh" ]] && source "$HOME/.zsh/work.zsh"
 
 . `brew --prefix`/etc/profile.d/z.sh
-function precmd () {
-  z --add "$(pwd -P)"
-}

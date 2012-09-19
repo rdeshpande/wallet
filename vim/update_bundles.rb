@@ -20,7 +20,8 @@ git_bundles = [
   "git://github.com/tsaleh/vim-align.git",
   "git://github.com/pangloss/vim-javascript",
   "https://github.com/Lokaltog/vim-powerline",
-  "https://github.com/myusuf3/numbers.vim.git"
+  "https://github.com/myusuf3/numbers.vim.git",
+  "https://github.com/tpope/vim-bundler.git"
 ]
 
 require 'fileutils'
