@@ -1,4 +1,31 @@
-call pathogen#infect()
+set nocompatible  " We don't want vi compatibility.
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle "tpope/vim-fugitive"
+Bundle "tpope/vim-rails"
+Bundle "tpope/vim-fugitive"
+Bundle "tpope/vim-fugitive"
+Bundle  "Raimondi/delimitMate"
+Bundle  "kchmck/vim-coffee-script.git"
+Bundle  "pangloss/vim-javascript"
+Bundle  "tpope/vim-fugitive.git"
+Bundle  "tpope/vim-haml.git"
+Bundle  "tpope/vim-rails.git"
+Bundle  "tpope/vim-repeat.git"
+Bundle  "tpope/vim-surround.git"
+Bundle  "Lokaltog/vim-powerline"
+Bundle  "bbommarito/vim-slim.git"
+Bundle  "briancollins/vim-jst.git"
+Bundle  "kien/ctrlp.vim.git"
+Bundle  "myusuf3/numbers.vim.git"
+Bundle  "scrooloose/syntastic.git"
+Bundle  "sickill/vim-pasta.git"
+Bundle  "tpope/vim-bundler.git"
+Bundle  "tpope/vim-endwise.git"
+Bundle  "shougo/neocomplcache"
 
 syntax on
 filetype plugin indent on  " Automatically detect file types.
@@ -6,10 +33,8 @@ filetype plugin indent on  " Automatically detect file types.
 " Gui Configuration
 if has("gui_running")
   set number
-  set guifont=Lucida\ Sans\ Typewriter:h12
-  set linespace=2
   set background=dark
-  colorscheme koehler
+  set guifont=Inconsolata:h14
   set guioptions=egmrLt
 end
 
@@ -30,7 +55,6 @@ set hlsearch
 set ignorecase
 set laststatus=2  " Always show status line.
 set modifiable
-set nocompatible  " We don't want vi compatibility.
 set nocp incsearch
 set noerrorbells  " No noise.
 set novisualbell  " No blinking .
@@ -44,6 +68,8 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set wildignore+=*.o,*.obj,.git,*.pdf,*.gif,*.png,*.jpg,*.ico
+scriptencoding utf-8
+
 
 " Shortcuts
 map <Leader>s :w<CR>
@@ -56,6 +82,9 @@ nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 let g:ruby_path = "/Users/rdeshpande/.rvm/rubies/default/bin"
 
 nnoremap <Leader>f     :CtrlPMRUFiles<CR>
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+      \ 'file': '\.exe$\|\.so$\|\.dll$' }
 
 " Vim-pasta
 let g:pasta_enabled_filetypes = ['ruby', 'javascript', 'css', 'sh']
@@ -67,3 +96,4 @@ au BufNewFile,BufRead *.ejs set filetype=jst
 
 let g:ragtag_global_maps = 1 
 let g:Powerline_symbols = 'fancy'
+let g:neocomplcache_enable_at_startup = 1

@@ -41,3 +41,5 @@ bindkey -e
 [[ -s "$HOME/.zsh/work.zsh" ]] && source "$HOME/.zsh/work.zsh"
 
 . `brew --prefix`/etc/profile.d/z.sh
+
+PATH=~/bin:$PATH
