@@ -17,15 +17,14 @@ Bundle  "tpope/vim-rails.git"
 Bundle  "tpope/vim-repeat.git"
 Bundle  "tpope/vim-surround.git"
 Bundle  "Lokaltog/vim-powerline"
-Bundle  "bbommarito/vim-slim.git"
 Bundle  "briancollins/vim-jst.git"
 Bundle  "kien/ctrlp.vim.git"
 Bundle  "myusuf3/numbers.vim.git"
 Bundle  "scrooloose/syntastic.git"
+Bundle  "slim-template/vim-slim.git"
 Bundle  "sickill/vim-pasta.git"
 Bundle  "tpope/vim-bundler.git"
 Bundle  "tpope/vim-endwise.git"
-Bundle  "shougo/neocomplcache"
 
 syntax on
 filetype plugin indent on  " Automatically detect file types.
