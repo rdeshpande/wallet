@@ -1,0 +1,20 @@
+let mapleader = ";"
+let maplocalleader = ";"
+set wildmode=longest,list
+
+" Shortcuts
+map <Leader>s :w<CR>
+cab Q quit
+cab W write
+cab Wq wq
+nmap <expr> <Leader>e ':e ' . expand('%:p:h')
+nnoremap <Leader>f     :CtrlPMRUFiles<CR>
+
+" Gui Configuration
+if has("gui_running")
+  set number
+  set background=dark
+  set guifont=Monaco:h14
+  set guioptions=egmrLt
+end
+

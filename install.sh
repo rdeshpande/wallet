@@ -1,9 +1,5 @@
 #!/bin/bash
 
-cd vim
-./update_bundles.rb
-cd ..
-
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
 for name in *; do
@@ -40,3 +36,4 @@ done
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 ln -s ~/wallet/zsh/rohan.zsh ~/.oh-my-zsh/custom
+curl -Lo- https://bit.ly/janus-bootstrap | bash
