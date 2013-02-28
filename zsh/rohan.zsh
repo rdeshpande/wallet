@@ -30,12 +30,14 @@ PW_PATH="~/.pw.yml"
 alias pw="gpg ~/.pw.yml.gpg && cat ~/.pw.yml && rm -f ~/.pw.yml"
 alias pwe="gpg ~/.pw.yml.gpg && rm ~/.pw.yml.gpg && vi ~/.pw.yml; gpg -c ~/.pw.yml && rm -f ~/.pw.yml"
 
+set -o vi
+bindkey '^R' history-incremental-search-backward
+
 # SETTINGS
 export EDITOR='vim'
 export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
-bindkey -e
 
 # Work related stuff
 [[ -s "$HOME/.zsh/work.zsh" ]] && source "$HOME/.zsh/work.zsh"

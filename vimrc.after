@@ -1,0 +1,9 @@
+" Gui Configuration
+if has("gui_running")
+  colorscheme tango2
+  set number
+  set background=dark
+  set guifont=Monaco:h14
+  set guioptions=egmrLt
+end
+
