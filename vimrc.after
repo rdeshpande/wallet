@@ -1,4 +1,7 @@
 " Gui Configuration
+set wrap
+set hidden
+
 if has("gui_running")
   colorscheme tango2
   set number
