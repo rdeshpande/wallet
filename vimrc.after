@@ -3,10 +3,13 @@ set wrap
 set hidden
 
 if has("gui_running")
-  colorscheme tango2
+  colorscheme ir_dark
   set number
-  set background=dark
-  set guifont=Monaco:h14
+  set guifont=Consolas:h15
   set guioptions=egmrLt
 end
 
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}', '|':'|' } 
+let g:AutoCloseProtectedRegions = ["Character"]
+
+autocmd BufEnter *.html.slim :set ft=slim
