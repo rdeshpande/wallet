@@ -12,3 +12,4 @@ end
 
 Hirb.enable
 Pry.start
+exit

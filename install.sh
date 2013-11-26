@@ -35,5 +35,5 @@ for name in *; do
 done
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ln -s ~/wallet/zsh/rohan.zsh ~/.oh-my-zsh/custom
-curl -Lo- https://bit.ly/janus-bootstrap | bash

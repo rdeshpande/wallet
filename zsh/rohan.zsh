@@ -31,6 +31,7 @@ export EDITOR='vim'
 export GPGKEY=01EFDA0D
 export GREP_OPTIONS='--color=auto'
 export LC_CTYPE=en_US.UTF-8
+export DISABLE_CORRECTION="true"
 
 # Work related stuff
 [[ -s "$HOME/.zsh/work.zsh" ]] && source "$HOME/.zsh/work.zsh"
