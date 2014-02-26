@@ -6,12 +6,15 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle "tpope/vim-fugitive.git"
 Bundle "tpope/vim-rails.git"
+Bundle 'jnwhiteh/vim-golang.git'
+Bundle 'cakebaker/scss-syntax.vim'
 Bundle "tpope/vim-surround.git"
 Bundle "Lokaltog/vim-powerline"
 Bundle "kien/ctrlp.vim.git"
-Bundle "myusuf3/numbers.vim.git"
 Bundle "slim-template/vim-slim.git"
 Bundle "tpope/vim-bundler.git"
+Bundle 'rking/ag.vim'
+Bundle 'tpope/vim-endwise.git'
 
 syntax on
 filetype plugin indent on  " Automatically detect file types.
@@ -27,6 +30,7 @@ set wrap
 set formatoptions=tcqr
 set hidden
 set history=256  " Number of things to remember in history.
+set list
 set listchars=tab:▸\ ,trail:¬   " UTF-8 characters for trailing whitespace
 set hlsearch
 set ignorecase
@@ -35,6 +39,12 @@ set modifiable
 set nocp incsearch
 set noerrorbells  " No noise.
 set novisualbell  " No blinking .
+set copyindent
+set shiftround
+set history=1000
+set undolevels=1000   
+set nobackup
+set noswapfile
 set ruler  " Ruler on
 set scrolloff=3
 set smartcase
@@ -55,12 +65,11 @@ cab Wq wq
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 nnoremap <Leader>f     :CtrlPMRUFiles<CR>
 
-
 if has("gui_running")
-  colorscheme slate
   set number
-  set guifont=Monaco:h13
+  set guifont=Fantasque\ Sans\ Mono:h16
   set guioptions=egmrLt
+  colorscheme darkblue
 end
 
 autocmd BufEnter *.html.slim :set ft=slim

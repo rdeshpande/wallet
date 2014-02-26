@@ -8,7 +8,7 @@ fi
 
 ## ALIAS
 alias cpd="cap production deploy:migrations"
-alias cpd="cap staging deploy:migrations"
+alias csd="cap staging deploy:migrations"
 alias s='sudo'
 alias bi='bundle install'
 alias be='bundle exec'
@@ -39,3 +39,5 @@ export DISABLE_CORRECTION="true"
 . `brew --prefix`/etc/profile.d/z.sh
 
 PATH=~/bin:$PATH
+
+eval "$(rbenv init -)"

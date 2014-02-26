@@ -17,8 +17,9 @@
   pl = pull
   rh = reset --hard HEAD
   ca = commit --amend
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
-	default = current
+	default = matching
 [core]
 	excludesfile = /Users/rdeshpande/.gitignore
 	editor = /usr/bin/vim
