@@ -1,15 +1,8 @@
-# Use Pry everywhere
 require "rubygems"
-require 'pry'
-require 'hirb'
+require 'irb/ext/save-history'
+require "awesome_print"
 
-# vim FTW
-Pry.config.editor = "gvim --nofork"
+AwesomePrint.irb!
 
-Pry.config.print = proc do |output, value|
-  Hirb::View.view_or_page_output(value) || Pry::DEFAULT_PRINT.call(output, value)
-end
-
-Hirb.enable
-Pry.start
-exit
+IRB.conf[:SAVE_HISTORY] = 2000
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-history"

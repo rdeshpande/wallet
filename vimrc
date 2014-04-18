@@ -3,9 +3,12 @@ filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+Bundle 'vim-scripts/vim-auto-save'
 Bundle 'gmarik/vundle'
 Bundle "tpope/vim-fugitive.git"
 Bundle "tpope/vim-rails.git"
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'ervandew/supertab'
 Bundle 'jnwhiteh/vim-golang.git'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle "tpope/vim-surround.git"
@@ -15,6 +18,7 @@ Bundle "slim-template/vim-slim.git"
 Bundle "tpope/vim-bundler.git"
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-endwise.git'
+Bundle 'nanotech/jellybeans.vim'
 
 syntax on
 filetype plugin indent on  " Automatically detect file types.
@@ -69,7 +73,7 @@ if has("gui_running")
   set number
   set guifont=Fantasque\ Sans\ Mono:h16
   set guioptions=egmrLt
-  colorscheme darkblue
+  colorscheme jellybeans
 end
 
 autocmd BufEnter *.html.slim :set ft=slim
@@ -79,6 +83,9 @@ nnoremap <Leader>f     :CtrlPMRUFiles<CR>
 let g:ctrlp_custom_ignore = {
       \ 'dir':  '\.git$\|\.hg$\|\.svn$',
       \ 'file': '\.exe$\|\.so$\|\.dll$' }
+
+
+let g:auto_save = 1 
 
 " Consider question/exclamation marks to be part of a Vim word.
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255

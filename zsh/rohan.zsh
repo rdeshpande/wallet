@@ -40,4 +40,6 @@ export DISABLE_CORRECTION="true"
 
 PATH=~/bin:$PATH
 
+# RBENV
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
