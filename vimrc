@@ -1,3 +1,5 @@
+set shell=/bin/sh
+
 set nocompatible  " We don't want vi compatibility.
 filetype off
 
@@ -18,7 +20,9 @@ Bundle "slim-template/vim-slim.git"
 Bundle "tpope/vim-bundler.git"
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-endwise.git'
-Bundle 'nanotech/jellybeans.vim'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'jwhitley/vim-matchit'
 
 syntax on
 filetype plugin indent on  " Automatically detect file types.
@@ -67,13 +71,16 @@ cab Q quit
 cab W write
 cab Wq wq
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
-nnoremap <Leader>f     :CtrlPMRUFiles<CR>
+
+" CtrlP
+nnoremap <Leader>f     :CtrlPMixed<CR>
+let g:ctrlp_working_path_mode = 'ra'
 
 if has("gui_running")
   set number
   set guifont=Fantasque\ Sans\ Mono:h16
   set guioptions=egmrLt
-  colorscheme jellybeans
+  colorscheme Tomorrow-Night
 end
 
 autocmd BufEnter *.html.slim :set ft=slim
