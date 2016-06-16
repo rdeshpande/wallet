@@ -1,0 +1,7 @@
+{
+    "esnext"        : true,     // true: Allow ES.next (ES6) syntax (ex: `const`)
+    // Custom Globals
+    "globals"       : {
+        "React"     : true
+    }
+}

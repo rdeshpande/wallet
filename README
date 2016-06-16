@@ -18,16 +18,7 @@ servers = (
   }
 );
 
-== ZSH
-
-The shell in this package requires oh-my-zsh. The install.sh has been updated to set this up.
-
 == OTHER DEPS
 
 - install xcode
 - install brew
-- brew install git
-               coreutils
-               wget
-               keychain
-- install rvm

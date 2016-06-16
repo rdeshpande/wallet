@@ -34,6 +34,4 @@ for name in *; do
   fi
 done
 
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-ln -s ~/wallet/zsh/rohan.zsh ~/.oh-my-zsh/custom
+curl -L http://install.ohmyz.sh | sh

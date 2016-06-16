@@ -3,3 +3,5 @@ vim/doc/*
 vim/bundle
 zsh/work.zsh
 vim/autoload
+.DS_Store
+atom/compile-cache/*

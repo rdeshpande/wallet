@@ -5,9 +5,12 @@ filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'vim-scripts/vim-auto-save'
 Bundle 'gmarik/vundle'
+Bundle 'vim-scripts/vim-auto-save'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 Bundle "tpope/vim-fugitive.git"
+Bundle "fatih/vim-go.git"
 Bundle "tpope/vim-rails.git"
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'ervandew/supertab'
@@ -23,6 +26,7 @@ Bundle 'tpope/vim-endwise.git'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jwhitley/vim-matchit'
+Bundle 'roman/golden-ratio'
 
 syntax on
 filetype plugin indent on  " Automatically detect file types.
@@ -32,6 +36,7 @@ let maplocalleader = ";"
 set autoindent
 set autowrite  " Writes on make/shell commands
 set backspace=start,indent
+set backupskip=/tmp/*,/private/tmp/*
 set clipboard=unnamed
 set expandtab
 set wrap
@@ -73,20 +78,20 @@ cab Wq wq
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 
 " CtrlP
-nnoremap <Leader>f     :CtrlPMixed<CR>
+nnoremap <Leader>f     :CtrlPMRUFiles<CR>
 let g:ctrlp_working_path_mode = 'ra'
 
 if has("gui_running")
   set number
-  set guifont=Fantasque\ Sans\ Mono:h16
+  set guifont=Inconsolata:h16
   set guioptions=egmrLt
-  colorscheme Tomorrow-Night
+  colorscheme gruvbox
+  set background=dark
 end
 
 autocmd BufEnter *.html.slim :set ft=slim
 autocmd BufEnter *.css.scss :set ft=scss
 
-nnoremap <Leader>f     :CtrlPMRUFiles<CR>
 let g:ctrlp_custom_ignore = {
       \ 'dir':  '\.git$\|\.hg$\|\.svn$',
       \ 'file': '\.exe$\|\.so$\|\.dll$' }
@@ -98,3 +103,9 @@ let g:auto_save = 1
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
 au BufNewFile,BufRead *.ejs set filetype=jst
+
+" Always load JSX even in html files
+let g:jsx_ext_required = 0
+
+" Disable gui audio bell
+autocmd! GUIEnter * set vb t_vb=
