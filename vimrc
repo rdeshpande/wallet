@@ -6,9 +6,11 @@ set backspace=start,indent
 set expandtab
 set history=1000
 set hlsearch
+set incsearch
 set nobackup
 set nocompatible  " We don't want vi compatibility.
 set noswapfile
+set rtp+=/usr/local/opt/fzf
 set scrolloff=3
 set shiftwidth=2
 set smarttab
@@ -26,7 +28,5 @@ cab W write
 cab Wq wq
 nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 
-" CtrlP
-nnoremap <Leader>f     :CtrlPMRUFiles<CR>
-let g:ctrlp_working_path_mode = 'ra'
-
+" FZF
+nnoremap <Leader>f     :History<CR>
