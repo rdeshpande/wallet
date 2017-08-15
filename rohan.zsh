@@ -15,7 +15,6 @@ alias bs="bundle exec rspec"
 alias cpd="bundle exec cap production deploy"
 
 set -o vi
-bindkey '^R' history-incremental-search-backward
 
 # SETTINGS
 export EDITOR='vim'
