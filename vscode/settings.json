@@ -1,0 +1,20 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.iconTheme": "vs-minimal",
+    "editor.minimap.enabled": false,
+    "go.toolsGopath": "/Users/rdeshpande/go",
+    "terminal.integrated.scrollback": 100000,
+    "vim.useSystemClipboard": true,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.pyc": true
+      },
+}

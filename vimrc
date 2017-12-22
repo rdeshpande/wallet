@@ -30,3 +30,5 @@ nmap <expr> <Leader>e ':e ' . expand('%:p:h')
 
 " FZF
 nnoremap <Leader>f     :History<CR>
+
+autocmd filetype crontab setlocal nobackup nowritebackup

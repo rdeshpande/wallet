@@ -24,8 +24,10 @@ export LC_CTYPE=en_US.UTF-8
 export DISABLE_CORRECTION="true"
 
 PATH=~/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # GO!
 export GOPATH="$HOME/go"
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
