@@ -1,13 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "vim.disableAnnoyingNeovimMessage": true,
-    "editor.minimap.enabled": false,
-    "go.toolsGopath": "/Users/rdeshpande/go",
     "terminal.integrated.scrollback": 100000,
     "vim.useSystemClipboard": true,
-    "window.zoomLevel": 0,
     "editor.tabSize": 2,
-    "editor.renderWhitespace": "boundary",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -16,9 +11,22 @@
         "**/.DS_Store": true,
         "**/.pyc": true
     },
-    "files.associations": {
-        "*.json_schema": "jsonc"
-    },
-    "editor.renderControlCharacters": true,
-    "editor.scrollBeyondLastLine": false
+    "editor.scrollBeyondLastLine": false,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "search.location":"panel",
+    "vscode_custom_css.imports": [
+        "file:///Users/rdeshpande/dev/wallet/vscode/vscode.css"
+    ],
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Go Mono",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vs-minimal",
 }

@@ -1,33 +1,25 @@
-## ALIAS
 alias s='sudo'
-alias bi='bundle install'
-alias be='bundle exec'
-alias gca="git commit -a -v"
-alias sc="rails console"
-alias ss="rails server"
 alias g="git"
-alias gph="git push heroku"
-alias hdb="heroku run rake db:migrate"
-alias ..="cd .."
-alias ...="cd ..."
-alias mig="bundle exec rake db:migrate"
-alias bs="bundle exec rspec"
-alias cpd="bundle exec cap production deploy"
 
 set -o vi
 
-# SETTINGS
 export EDITOR='vim'
-export GPGKEY=01EFDA0D
-export GREP_OPTIONS='--color=auto'
-export LC_CTYPE=en_US.UTF-8
-export DISABLE_CORRECTION="true"
-
-PATH=~/bin:$PATH
-
-# GO!
-export GOPATH="$HOME/go"
-
-# FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
+
+# Docker bash fixes
+autoload bashcompinit
+bashcompinit
+gi(){
+    docker exec -it $1 bash -c "stty cols $COLUMNS rows $LINES && bash";
+}
+_gi(){
+    COMPREPLY=( $(docker ps --format "{{.Names}}" -f name=$2) );
+}
+complete -F _gi gi;
+export gi;
+
+alias lapi="gi luminary-api"
+alias lg="ssh luminary1"
